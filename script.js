@@ -46,7 +46,7 @@ var page = 0;
 
 //Infinite Scrolling
 $(window).scroll(function () {
-    if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+    if ($(this).scrollTop() + 1 >= $('body').height() - $(window).height()) {
 
         if (parseInt(page, "10") * 100 < parseInt(100000, "10")) {
 
